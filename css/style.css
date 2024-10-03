@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('comic-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Comic Neue', cursive;
+    color: #333;
+}
+
+
+#hangman {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hangman h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#word {
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+#hangman-canvas {
+    margin: 10px auto;
+    display: block;
+}
+
+#letters {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;;
+}
+
+#letters button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: #f0c040;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#letters button:hover {
+    transform: scale(1.1);
+    background-color: #e0b030;
+}
+
+#letters button.crossed-out {
+    text-decoration: line-through;
+    color: grey;
+    pointer-events: none;
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#restart {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #f06363;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.1s;
+}
+
+#restart:hover {
+    transform: scale(1.1);
+    background-color: #e05353;
+}
